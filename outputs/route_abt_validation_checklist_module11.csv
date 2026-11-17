@@ -1,0 +1,9 @@
+check,result,status,notes
+Duplicate route keys (origin + dest),0,Pass,Each route appears once
+"Missing key values (origin, dest)",0,Pass,Every row has both key values
+Missing ABT cells (all columns),25,Documented,Dictionary notes explain unmatched destination fields and missing measures for EWR to LGA.
+"Nonpositive flight counts, distances and air times",0,Pass,"All observed counts, distances, and air times are positive."
+Routes with a negative max_arr_delay,4,Documented,The max_arr_delay dictionary entry explains that all recorded arrivals on these routes were early.
+Missing target values (avg_arr_delay),1,Documented,The target dictionary entry identifies EWR to LGA and its single cancelled flight.
+ABT columns without a dictionary row,0,Pass,Every ABT column has a dictionary entry.
+Blank data dictionary cells,0,Pass,Every dictionary entry has all four documentation fields filled.
